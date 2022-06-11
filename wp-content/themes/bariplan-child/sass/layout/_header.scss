@@ -1,0 +1,61 @@
+.header{
+
+}
+
+.bariplan-header-top{
+    background: transparent;
+    border-bottom: 1px solid #CDCDCD;
+}
+.top-right-menu ul.social-icons li {
+    margin-left: 10px;
+}
+.social-icons {
+    .social-icon {
+        border-radius: 100%;
+        background: var(--primary);
+        i{
+            width: 34px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:before{
+                color: var(--light);
+            }
+        }
+    }
+}
+
+.em-quearys-top.msin-menu-search .em-quearys-menu i{
+    background: transparent;
+    color: var(--primary);
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    line-height: initial;
+}
+
+.bariplan_nav_area.postfix {
+    box-shadow: none;
+}
+
+.bariplan_nav_area.prefix, .hbg2 {
+    background-color: var(--light) !important;
+}
+.bariplan_nav_area.prefix .bariplan_menu>ul>li>a {
+    color: var(--dark);
+}
+.creative_header_menu>ul>li:hover>a, .bariplan_menu>ul>li.current>a, .bariplan_menu>ul>li:hover>a {
+    color: var(--primary);
+}
+.bariplan_menu>ul>li>a {
+    font-family: var(--font-poppins);
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--primary);
+        text-decoration: underline;
+    }
+}
+

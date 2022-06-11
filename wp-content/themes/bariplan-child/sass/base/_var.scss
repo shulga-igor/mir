@@ -1,0 +1,23 @@
+:root {
+  --primary: #3787D4;
+  --dark: #141C4B;
+  --light: #ffffff;
+  --light-grey: #F7F8FA;
+
+  --btn-primary: #FFD121;
+  --btn-primary-hover: #FFAB00;
+
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+
+  --desctop-width: 1280px;
+  --tablet-width: 991px;
+  --mobile-width: 767px;
+  --small-mobile-width: 480px;
+
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;900&display=swap');

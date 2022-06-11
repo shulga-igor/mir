@@ -1,0 +1,65 @@
+.footer-middle {
+    color: var(--dark) !important;
+    border-bottom: 1px solid #CDCDCD;
+
+    .bariplan-description-area{
+        max-width: 290px;
+        p{
+            color: var(--dark) !important;
+            font-size: 14px;
+            opacity: .7;
+        }
+        a img {
+            margin-top: 0;
+        }
+        .social-icons a{
+            background: var(--primary);
+            border-radius: 100%;
+        }
+        
+    }
+    .widget ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 15%;
+        li {
+            width: 50%;
+            a{
+                color: var(--dark) !important;
+                font-size: 20px;
+                &:hover {
+                    text-decoration-line: underline;
+                    color: #3787D4 !important;
+                }
+            }
+        }
+    }
+
+}
+
+.footer-bottom {
+    *{
+        color: var(--dark) !important;
+    }
+    .row {
+        align-items: center;
+    }
+    .copy-right-text {
+        
+        p {
+            font-size: 10px;
+            opacity: .7;
+        }
+    }
+    .footer-menu ul li {
+        &:not(:last-child) {
+            border-right: 1px solid rgba(#606264, .7);
+        }
+    }
+    .footer-menu ul li a {
+        color: #606264;
+        font-size: 14px;
+        opacity: .7;
+    }
+    
+}
