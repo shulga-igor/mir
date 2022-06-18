@@ -1,0 +1,186 @@
+.line-row {
+    .elementor-container {
+        .elementor-widget-image-box {
+            height: 100%;
+
+            .elementor-widget-container {
+                height: 100%;
+
+                .elementor-image-box-wrapper {
+                    display: flex; 
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+
+                    .elementor-image-box-content {
+                        height: 100%;
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-team {
+    background: url('images/blog-bg.png') 0px 0px no-repeat;
+    background-size: 100%;
+    .elementor-widget-container {
+        overflow: hidden;
+    }
+}
+.custom-bg {
+    background: url('images/blog-bg.png') 0px 0px no-repeat;
+    background-size: 100%;
+}
+body {
+    .sub-item {
+        padding: 0;
+    }
+}
+
+.custom-help-blc {
+    .elementor-container {
+        .elementor-column {
+            height: auto;
+            .elementor-element {
+                height: 100%;
+                .elementor-widget-container {
+                    height: 100%;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.custom-full-bg {
+    
+}
+
+
+.no-last-btn {
+    .blog-btn-bottom {
+        display: none;
+    }
+}
+
+.custom-tab {
+    .witr_adv_tab_area {
+        display: flex;
+
+        .witr_adv_tab_menu {
+            max-width: 400px;
+            margin: 0 40px 0 0;
+
+            .nav {
+                display: flex;
+                flex-direction: column;
+                li {
+                    width: 100%;
+                    a{
+                        background: #F7F8FA;
+                        margin: 0;
+                        text-align: left;
+                        color: rgba(#000, .8);
+                        line-height: 1;
+
+                        &:hover, 
+                        &.active {
+                            background: #3787D4;
+                            color: var(--light);
+                        }
+                    }
+                }
+            }
+        }
+
+        .witr_adv_tab_content {
+            width: 100%;
+            margin: 0;
+
+            .tab-pane {
+                h1, h2, h3, h4, h5, h6 {
+                    color: #3787D4;
+                    margin-bottom: 30px;
+                }
+                h2 {
+                    font-size: 24px;
+                }
+                p{
+                    color: #141C4B;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.custom-connect {
+    .sub-item {
+        h3{
+            font-size: 24px;
+            color: #141C4B;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 34px;
+            color: #3787D4;
+            font-weight: 600;
+        }
+    }
+}
+
+.custom-contact-info {
+    .elementor-widget-container {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 36px;
+        color: #3787D4;
+        h2{
+            font-weight: 600;
+            font-size: 18px;
+            color: #141C4B;
+            margin: 0 0 15px 0;
+        }
+        p {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.custom-form {
+    .apartment_area {
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-shadow: 0px 4px 8px -4px rgba(26, 26, 26, .5) !important;
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="num"],
+        textarea {
+            border: 1px solid #CDCDCD;
+            border-radius: 4px;
+        }
+        .wpcf7-submit {
+            padding: 18px 80px !important;
+            border-radius: 100px !important;
+            background: var(--btn-primary);
+            font-size: 18px;
+            font-family: var(--font-poppins);
+            font-weight: 600;
+            color: var(--dark);
+            margin: 0;
+            height: auto;
+            width: auto;
+            &:hover{
+              background: var(--btn-primary-hover);
+              color: var(--dark);
+            }
+        }
+    }
+}

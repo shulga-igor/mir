@@ -2407,7 +2407,33 @@ body{
     }
 
     .feature_btn a {
-        border: 1px solid var(--btn-primary)
+        padding: 18px 30px !important;
+        border-radius: 100px !important;
+        background: var(--btn-primary);
+        font-size: 18px;
+        font-family: var(--font-poppins);
+        font-weight: 600;
+        color: var(--dark);
+        border: 1px solid var(--btn-primary);
+        &:hover{
+            background: var(--btn-primary-hover);
+            color: var(--dark);
+        }
+    }
+
+    .btn-w .feature_btn a {
+        padding: 18px 30px !important;
+        border-radius: 100px !important;
+        background: transparent !important;
+        font-size: 18px;
+        font-family: var(--font-poppins);
+        font-weight: 600;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        &:hover{
+            background: var(--primary) !important;
+            color: var(--light) !important;
+        }
     }
 
     .witr_feature_btn_3d a {
