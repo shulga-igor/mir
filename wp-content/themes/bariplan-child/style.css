@@ -3245,6 +3245,11 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   border-bottom: 1px solid #CDCDCD;
 }
 
+.mean-container .mean-bar,
+.mean-container .mean-nav {
+  background: var(--primary);
+}
+
 .footer-middle {
   color: var(--dark) !important;
   border-bottom: 1px solid #CDCDCD;
@@ -3275,7 +3280,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 15%;
+  margin: 0 8%;
 }
 
 .footer-middle .widget ul li {
@@ -3288,6 +3293,12 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .footer-middle .widget ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #3787D4 !important;
+}
+
+.footer-middle .widget ul li.current_page_item a {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #3787D4 !important;
@@ -3973,6 +3984,12 @@ body .sub-item {
   margin-bottom: 35px;
 }
 
+.custom-form .elementor-widget-wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .custom-form .apartment_area {
   background: #FFFFFF;
   border: 1px solid #E6E6E6;
@@ -4005,5 +4022,136 @@ body .sub-item {
 .custom-form .apartment_area .wpcf7-submit:hover {
   background: var(--btn-primary-hover);
   color: var(--dark);
+}
+
+.custom-partners .elementor-image-box-img {
+  padding: 65px 15px;
+  border: 1px solid #BCC4CC;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.custom-partners .elementor-image-box-img img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.custom-partners .elementor-image-box-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #141C4B;
+  margin-bottom: 20px;
+}
+
+.custom-partners .elementor-image-box-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #141C4B;
+  opacity: 0.7;
+}
+
+.custom-slider-text .elementor-widget-wrap {
+  padding-left: 0 !important;
+}
+
+.custom-slider-text .elementor-container.elementor-column-gap-default {
+  margin: 0;
+}
+
+.custom-slider-text .slick-list {
+  padding: 0 0 0 70px;
+}
+
+.custom-slider-text .slick-slide {
+  margin: 0 0 0 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-slider-text .witr_text_widget_inner {
+  padding: 0 0 0 30px;
+}
+
+.custom-slider-text .witr_text_widget_inner h2 {
+  margin-bottom: 20px;
+}
+
+.custom-slider-text .witr_text_widget_inner p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #141C4B;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.custom-slider-text .witr_text_widget_inner p:empty {
+  margin: 0;
+}
+
+.custom-slider-text .witr_text_widget_inner .witr_widget_list ul:empty {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-slider-text .witr_ds_content_area {
+  position: relative;
+}
+
+.custom-slider-text .slick-arrow {
+  -webkit-transform: none;
+          transform: none;
+  z-index: 999;
+  opacity: 1;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custom-slider-text .slick-arrow:before {
+  content: "";
+  background: url(images/slider-arrow.svg) 0px 0px no-repeat;
+  width: 18px;
+  height: 16px;
+  display: block;
+  margin: auto;
+}
+
+.custom-slider-text .slick-arrow.slick-prev {
+  position: static;
+  margin: 0 70px 35px auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-slider-text .slick-arrow.slick-next {
+  top: 0;
+  right: 0;
+}
+
+.custom-slider-text.slider-right .slick-list {
+  padding: 0 70px 0 0;
+}
+
+.custom-slider-text.slider-right .slick-list .slick-slide {
+  margin: 0 40px 0 0;
+}
+
+.custom-slider-text.slider-right .slick-arrow.slick-prev {
+  position: static;
+  margin: 0 auto 35px 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-slider-text.slider-right .slick-arrow.slick-next {
+  top: 0;
+  left: 70px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -21,7 +21,7 @@
     .widget ul {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 15%;
+        margin: 0 8%;
         li {
             width: 50%;
             a{
@@ -31,11 +31,20 @@
                     text-decoration-line: underline;
                     color: #3787D4 !important;
                 }
+                
+            }
+            &.current_page_item {
+                a {
+                    text-decoration-line: underline;
+                    color: #3787D4 !important;
+                }
             }
         }
     }
 
 }
+
+
 
 .footer-bottom {
     *{
