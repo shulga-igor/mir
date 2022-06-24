@@ -3588,103 +3588,24 @@ if(! empty($witrshowdata['witr_unicid_c'])){
 
 
 							<div class="col-lg-<?php if( !empty( $witrshowdata['witr_column_grid'] ) ){echo $witrshowdata['witr_column_grid'];}?>  col-md-6 col-sm-12 col-xs-12 <?php echo $witr_gutter_column; ?>">
-								<div class="test-part mt-50">						
-										<h6><?php the_title(); ?>	</h6>  									 
-									<?php if($testi_deg){?><span> <?php echo $testi_deg; ?> </span> <?php }
-									if($witrshowdata['witr_show_star']=='yes'){?>
-										<ul>
-											<li>
-												<?php if($em_rating==5){?> 
-													<div class="execllent_toggol">
-														<div class="em_crating">
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-														</div>
-														<?php if($review_text){?>
-														<div class="execllent_star">
-															<h3><?php echo $review_text;?></h3>
-														</div>
-														<?php }?>
-													</div>
-												
-												<?php }elseif($em_rating==4){?>
-													<div class="execllent_toggol">
-														<div class="em_crating">
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star"></i>
-														</div>
-														<?php if($review_text){?>
-														<div class="execllent_star">
-															<h3><?php echo $review_text;?></h3>
-														</div>
-														<?php }?>
-													</div>												
+                                <div class="test-part mt-50">
+                                    <div class="icon">
+                                        <svg width="76" height="49" viewBox="0 0 76 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25.4415 0C8.75527 10.7133 0.5 21.9534 0.5 33.3692C0.5 42.5018 6.64754 49 15.0785 49C22.6311 49 28.9543 43.0287 28.9543 35.828C28.9543 29.3298 23.5094 23.5341 17.1862 23.5341H16.8349C18.767 20.1971 23.8607 15.4552 32.1159 9.30824L25.4415 0ZM60.219 23.5341C62.1511 20.1971 67.2447 15.4552 75.5 9.30824L68.8255 0C52.1393 10.7133 43.8841 21.9534 43.8841 33.3692C43.8841 42.5018 50.0316 49 58.4625 49C66.0152 49 72.3384 43.0287 72.3384 35.828C72.3384 29.3298 66.8934 23.5341 60.5703 23.5341H60.219Z" fill="#3787D4"/>
+                                        </svg>
+                                    </div>
+                                    <!-- content -->
+                                    <?php echo '<p class="description-text">'.wp_trim_words( get_the_content(), $witr_content_length, '' ).'</p>';?>
+                                    <!-- image -->
+                                    <?php if(has_post_thumbnail()){?>
+                                        <div class="image">
+                                            <?php the_post_thumbnail(); ?>
+                                        </div>
+                                    <?php } ?>
 
-												<?php }elseif($em_rating==3){?>
-													<div class="execllent_toggol">
-														<div class="em_crating">
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star"></i>
-															<i class="icofont-star"></i>
-														</div>
-														<?php if($review_text){?>
-														<div class="execllent_star">
-															<h3><?php echo $review_text;?></h3>
-														</div>
-														<?php }?>
-													</div>											
-
-												<?php }elseif($em_rating==2){?>
-													<div class="execllent_toggol">
-														<div class="em_crating">
-															<i class="icofont-star active"></i>
-															<i class="icofont-star active"></i>
-															<i class="icofont-star"></i>
-															<i class="icofont-star"></i>
-															<i class="icofont-star"></i>
-														</div>
-														<?php if($review_text){?>
-														<div class="execllent_star">
-															<h3><?php echo $review_text;?></h3>
-														</div>
-														<?php }?>
-													</div>											
-
-												<?php }elseif($em_rating==1){?>
-													<div class="execllent_toggol">
-														<div class="em_crating">
-														
-															<i class="icofont-star active"></i>
-															<i class="icofont-star"></i>
-															<i class="icofont-star"></i>
-															<i class="icofont-star"></i>
-															<i class="icofont-star"></i>
-														</div>
-														<?php if($review_text){?>
-														<div class="execllent_star">
-															<h3><?php echo $review_text;?></h3>
-														</div>
-														<?php }?>
-													</div>
-												<?php }else{}?>
-											</li>
-										</ul>
-									<?php } ?>
-									<!-- content -->	
-									<?php echo '<p>'.wp_trim_words( get_the_content(), $witr_content_length, '' ).'</p>';?>
-									<!-- image -->
-									<?php if(has_post_thumbnail()){?>							
-										<?php the_post_thumbnail(); ?> 								
-									<?php } ?>
-								</div> <!-- test part -->
+                                    <p class="name"><?php the_field('name'); ?></p>
+                                    <p class="position"><?php the_field('position'); ?></p>
+                                </div> <!-- test part -->
 							</div>
 
 				

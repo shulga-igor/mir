@@ -315,3 +315,48 @@ body {
     }
     
 }
+
+.custom-testimonials {
+    .row {
+        flex-direction: column;
+        max-height: 3000px;
+        overflow: hidden;
+        & > div {
+            &:nth-child(4n+1),
+            &:nth-child(4n+2){
+                .test-part {
+                    background: #F7F8FA;
+                }
+            }
+        }
+        .test-part {
+            box-shadow: none;
+            text-align: center;
+            padding: 40px 30px;
+            .icon {
+                margin-bottom: 20px;
+            }
+            .description-text {
+                max-width: 500px;
+                margin: 0 auto 20px;
+                color: #141C4B;
+                font-size: 18px;
+            }
+            .image {
+                margin-bottom: 20px;
+                img {
+                    position: static;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                }
+            }
+            .name, .position {
+                margin-bottom: 0;
+                color: #141C4B;
+                font-size: 18px;
+            }
+        }
+    }
+}
